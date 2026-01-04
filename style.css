@@ -1,0 +1,74 @@
+:root {
+    --msu-blue: #00205B;
+    --msu-gold: #B9975B;
+    --nav-bg: #0a0a0a;
+}
+
+body { font-family: 'Roboto', sans-serif; margin: 0; background: #fff; color: #333; }
+
+/* Branding: Ali Bazrafkan Lab */
+.logo { color: white; text-decoration: none; display: flex; align-items: baseline; }
+.logo .bold-letter { font-size: 1.8rem; font-weight: 800; color: var(--msu-gold); }
+.logo .small-text { font-size: 1rem; font-weight: 400; margin-right: 5px; }
+
+/* Navigation */
+nav {
+    background-color: var(--nav-bg);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid var(--msu-gold);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links { display: flex; list-style: none; margin: 0; }
+.nav-links li { margin-left: 15px; }
+.nav-links a { color: #fff; text-decoration: none; font-size: 0.8rem; text-transform: uppercase; }
+.nav-links a:hover, .active { color: var(--msu-gold); font-weight: bold; }
+
+/* Structure */
+.container { max-width: 1100px; margin: 50px auto; padding: 0 20px; min-height: 60vh; }
+.hero { 
+    height: 55vh; 
+    background: linear-gradient(rgba(0,32,91,0.7), rgba(0,32,91,0.7)), 
+                url('transition.gif') center/cover; /* Just change the filename here */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: left; 
+    align-items: center; 
+    color: white; 
+    text-align: center;
+}
+footer { padding: 30px; text-align: center; background: #f4f4f4; border-top: 1px solid #ddd; font-size: 0.9rem; }
+
+
+.footer-socials {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.footer-socials a {
+    color: #555;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.footer-socials a:hover {
+    color: var(--msu-gold);
+}
+
+.footer-socials img {
+    opacity: 0.8;
+}
+
+.footer-socials a:hover img {
+    opacity: 1;
+}

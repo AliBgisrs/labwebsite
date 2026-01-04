@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Opportunities | Ali Bazrafkan Lab</title>
+    <style>
+        /* Specific styles for the Opportunity cards */
+        .opp-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            position: relative;
+            background: #fff;
+        }
+
+        .status-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .open { 
+            background-color: #e6fffa; 
+            color: #2d6a4f; 
+            border: 1px solid #2d6a4f; 
+        }
+        
+        .closed { 
+            background-color: #fff5f5; 
+            color: #c53030; 
+            border: 1px solid #c53030; 
+        }
+
+        .upload-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px dashed var(--msu-blue);
+            border-radius: 4px;
+        }
+
+        .btn-submit {
+            background: var(--msu-blue);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <span class="bold-letter">A</span><span class="small-text">li</span>
+            <span class="bold-letter">B</span><span class="small-text">azrafkan Lab</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="opportunities.html" class="active">Opportunities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Join Our Team</h1>
+        <p>We are always looking for passionate individuals interested in precision agriculture and computational modeling. If a position is open, please submit your CV below.</p>
+        <hr>
+
+        <div class="opp-card">
+            <span class="status-badge open">Open Position</span>
+            <h2 style="color: var(--msu-blue);">Master of Science (M.S.)</h2>
+            <p>Focus: UAS Sensor Fusion and Crop Phenotyping. Requires strong background in Python or GIS.</p>
+            
+            <div class="upload-box">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label style="display:block; font-size:0.85rem; margin-bottom:5px;"><strong>Upload CV/Resume (PDF)</strong></label>
+                    <input type="file" name="ms_cv" accept=".pdf" required>
+                    <button type="submit" class="btn-submit">Apply for M.S.</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="opp-card">
+            <span class="status-badge open">Open Position</span>
+            <h2 style="color: var(--msu-blue);">Doctor of Philosophy (Ph.D.)</h2>
+            <p>Focus: Deep Learning for Digital Twins in Agriculture. Experience with Blender Python API or Machine Learning frameworks (PyTorch/TensorFlow) is highly preferred.</p>
+            
+            <div class="upload-box">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label style="display:block; font-size:0.85rem; margin-bottom:5px;"><strong>Upload CV/Resume (PDF)</strong></label>
+                    <input type="file" name="phd_cv" accept=".pdf" required>
+                    <button type="submit" class="btn-submit">Apply for Ph.D.</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="opp-card">
+            <span class="status-badge closed">Currently Full</span>
+            <h2 style="color: var(--msu-blue);">Postdoctoral Researcher</h2>
+            <p>Focus: Autonomous Systems and Decision Support. We are not currently recruiting for postdoc roles, but exceptional candidates are welcome to send their CV for future consideration.</p>
+            
+            <div class="upload-box">
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label style="display:block; font-size:0.85rem; margin-bottom:5px;"><strong>Send CV for future consideration</strong></label>
+                    <input type="file" name="postdoc_cv" accept=".pdf">
+                    <button type="submit" class="btn-submit" style="background:#666;">Submit CV</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>MONTANA STATE UNIVERSITY | Ali Bazrafkan Lab</p>
+        <div class="footer-socials">
+            <a href="https://github.com/AliBgisrs?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ali-bazrafkan-phd-424829244/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

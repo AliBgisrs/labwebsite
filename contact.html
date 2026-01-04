@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact | Ali Bazrafkan Lab</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <span class="bold-letter">A</span><span class="small-text">li</span>
+            <span class="bold-letter">B</span><span class="small-text">azrafkan Lab</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="opportunities.html">Opportunities</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <hr>
+        <div style="display: flex; gap: 50px; flex-wrap: wrap; align-items: flex-start;">
+            
+            <div style="flex: 1; min-width: 300px;">
+                <h3>Mailing Address</h3>
+                <p>Ali Bazrafkan Lab<br>
+                Department of Agricultural and Biological Engineering<br>
+                Montana State University<br>
+                Bozeman, MT 59717</p>
+                
+                <h3>Email</h3>
+                <p>ali.bazrafkan@montana.edu</p>
+
+                <div style="margin-top: 30px; text-align: center;">
+                    <img src="lablogo.png" alt="AB Lab Branding" style="width: 100%; max-width: 350px; border-radius: 8px; border: 2px solid var(--msu-gold); box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                </div>
+            </div>
+            
+            <div style="flex: 1; min-width: 300px; background: #f9f9f9; padding: 30px; border-radius: 5px; border-top: 4px solid var(--msu-blue);">
+                <h3>Send a Message</h3>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <label style="font-size: 0.8rem; font-weight: bold;">Full Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd;" required>
+                    
+                    <label style="font-size: 0.8rem; font-weight: bold;">Email Address</label>
+                    <input type="email" name="email" placeholder="Enter your email" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd;" required>
+                    
+                    <label style="font-size: 0.8rem; font-weight: bold;">Upload CV (PDF, Image, or Word)</label>
+                    <input type="file" name="cv" accept=".pdf,.doc,.docx,.jpg,.png" style="width: 100%; padding: 10px; margin-bottom: 15px; background: white; border: 1px dashed var(--msu-gold);">
+                    
+                    <label style="font-size: 0.8rem; font-weight: bold;">Message</label>
+                    <textarea name="message" placeholder="Briefly describe your interest..." rows="4" style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ddd;"></textarea>
+                    
+                    <button type="submit" style="background: var(--msu-blue); color: white; padding: 12px 25px; border: none; cursor: pointer; font-weight: bold;">
+                        Send Application
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>MONTANA STATE UNIVERSITY | Ali Bazrafkan Lab</p>
+        <div class="footer-socials">
+            <a href="https://github.com/AliBgisrs?tab=repositories" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ali-bazrafkan-phd-424829244/" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
